@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7546080205ca44d0b56126e5f6cd11f1" Name="Diagram1" ZoomLevel="75">
+        <EntityTypeShape EntityType="REMSDBModel.AdditionalCharge" Width="1.5" PointX="5.25" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="REMSDBModel.FlatCharge" Width="1.5" PointX="8.375" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="REMSDBModel.Floor" Width="1.5" PointX="4.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="REMSDBModel.Plan" Width="1.5" PointX="7.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="REMSDBModel.PLC" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="REMSDBModel.FK_FlatCharge_AdditionalCharge" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="REMSDBModel.Flat" Width="1.5" PointX="6.5" PointY="2" />
+        <AssociationConnector Association="REMSDBModel.FK_Flat_Floor" />
+        <AssociationConnector Association="REMSDBModel.FK_FlatCharge_Flat" />
+        <EntityTypeShape EntityType="REMSDBModel.Error" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="REMSDBModel.FlatPLC" Width="1.5" PointX="10.5" PointY="4.75" />
+        <AssociationConnector Association="REMSDBModel.FK_FlatPLC_Flat" />
+        <AssociationConnector Association="REMSDBModel.FK_FlatPLC_PLC" />
+        <EntityTypeShape EntityType="REMSDBModel.Project" Width="1.5" PointX="0.75" PointY="4.375" />
+        <EntityTypeShape EntityType="REMSDBModel.ProjectType" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="REMSDBModel.Tower" Width="1.5" PointX="3" PointY="4" />
+        <AssociationConnector Association="REMSDBModel.FK_Floor_Tower" />
+        <AssociationConnector Association="REMSDBModel.FK_ProjectType_Project" />
+        <AssociationConnector Association="REMSDBModel.FK_Tower_Project" />
+        <AssociationConnector Association="REMSDBModel.FK_Tower_Project1" />
+        <EntityTypeShape EntityType="REMSDBModel.FlatType" Width="1.5" PointX="10.375" PointY="1" />
+        <EntityTypeShape EntityType="REMSDBModel.FlatTypeSize" Width="1.5" PointX="12.625" PointY="1" />
+        <AssociationConnector Association="REMSDBModel.FK_FlatTypeSize_FlatType" />
+        <EntityTypeShape EntityType="REMSDBModel.PlanTypeMaster" Width="1.5" PointX="10" PointY="12.25" />
+        <AssociationConnector Association="REMSDBModel.FK_PlanTypeMaster_Plan" />
+        <AssociationConnector Association="REMSDBModel.FK_PlanTypeMaster_FlatTypeSize" />
+        <EntityTypeShape EntityType="REMSDBModel.PlanInstallment" Width="1.5" PointX="10" PointY="8.125" />
+        <AssociationConnector Association="REMSDBModel.FK_PlanInstallment_Plan" />
+        <EntityTypeShape EntityType="REMSDBModel.Agreement" Width="1.5" PointX="11.375" PointY="30.5" />
+        <EntityTypeShape EntityType="REMSDBModel.AssuredReturn" Width="1.5" PointX="12.75" PointY="7.75" />
+        <EntityTypeShape EntityType="REMSDBModel.AssuredReturnPayment" Width="1.5" PointX="13.75" PointY="12.75" />
+        <EntityTypeShape EntityType="REMSDBModel.BankMaster" Width="1.5" PointX="13.75" PointY="4.75" />
+        <EntityTypeShape EntityType="REMSDBModel.BrokerMaster" Width="1.5" PointX="0.75" PointY="14.75" />
+        <EntityTypeShape EntityType="REMSDBModel.BrokerPayment" Width="1.5" PointX="2.75" PointY="14.75" />
+        <EntityTypeShape EntityType="REMSDBModel.BrokerToProperty" Width="1.5" PointX="14.75" PointY="7.75" />
+        <EntityTypeShape EntityType="REMSDBModel.CityMaster" Width="1.5" PointX="15.75" PointY="0.75" />
+        <EntityTypeShape EntityType="REMSDBModel.Customer" Width="1.5" PointX="11.375" PointY="87.125" />
+        <EntityTypeShape EntityType="REMSDBModel.EventMaster" Width="1.5" PointX="12.125" PointY="58.875" />
+        <EntityTypeShape EntityType="REMSDBModel.FlatInstallmentDetail" Width="1.5" PointX="14.375" PointY="60.375" />
+        <EntityTypeShape EntityType="REMSDBModel.LatePayment" Width="1.5" PointX="11.375" PointY="54.875" />
+        <EntityTypeShape EntityType="REMSDBModel.ModuleList" Width="1.5" PointX="7.75" PointY="15.75" />
+        <EntityTypeShape EntityType="REMSDBModel.Payment" Width="1.5" PointX="11.375" PointY="65.75" />
+        <EntityTypeShape EntityType="REMSDBModel.PaymentCancel" Width="1.5" PointX="11.375" PointY="74.875" />
+        <EntityTypeShape EntityType="REMSDBModel.PaymentOther" Width="1.5" PointX="11.375" PointY="79" />
+        <EntityTypeShape EntityType="REMSDBModel.PaymentOtherCancel" Width="1.5" PointX="11.375" PointY="50.875" />
+        <EntityTypeShape EntityType="REMSDBModel.PaymentRecord" Width="1.5" PointX="11.375" PointY="16.5" />
+        <EntityTypeShape EntityType="REMSDBModel.PaymentRefund" Width="1.5" PointX="11.375" PointY="35.875" />
+        <EntityTypeShape EntityType="REMSDBModel.PayServiceTax" Width="1.5" PointX="11.375" PointY="45.375" />
+        <EntityTypeShape EntityType="REMSDBModel.PropertyRemark" Width="1.5" PointX="11.375" PointY="23.125" />
+        <EntityTypeShape EntityType="REMSDBModel.PropertyTransfer" Width="1.5" PointX="11.375" PointY="26.875" />
+        <EntityTypeShape EntityType="REMSDBModel.RefundProperty" Width="1.5" PointX="11.375" PointY="41.375" />
+        <EntityTypeShape EntityType="REMSDBModel.ReminderLetter" Width="1.5" PointX="11.375" PointY="62.75" />
+        <EntityTypeShape EntityType="REMSDBModel.RoleAccess" Width="1.5" PointX="15.75" PointY="12.75" />
+        <EntityTypeShape EntityType="REMSDBModel.TaxMaster" Width="1.5" PointX="16.75" PointY="4.75" />
+        <EntityTypeShape EntityType="REMSDBModel.UploadAgreement" Width="1.5" PointX="11.375" PointY="20" />
+        <EntityTypeShape EntityType="REMSDBModel.UserAccess" Width="1.5" PointX="16.75" PointY="8.75" />
+        <EntityTypeShape EntityType="REMSDBModel.UserProperty" Width="1.5" PointX="3.375" PointY="10.875" />
+        <EntityTypeShape EntityType="REMSDBModel.PayTransferFee" Width="1.5" PointX="15.75" PointY="16.75" />
+        <AssociationConnector Association="REMSDBModel.FK_FlatInstallmentDetail_EventMaster" />
+        <AssociationConnector Association="REMSDBModel.FK_UserProperty_UserProperty" />
+        <EntityTypeShape EntityType="REMSDBModel.vw_SaleFlat" Width="1.5" PointX="18.375" PointY="12.75" />
+        <EntityTypeShape EntityType="REMSDBModel.SaleFlat" Width="1.5" PointX="8.75" PointY="19.125" />
+        <AssociationConnector Association="REMSDBModel.FK_Agreement_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_Customer_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_SaleFlat_Flat" />
+        <AssociationConnector Association="REMSDBModel.FK_FlatInstallmentDetail_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_LatePayment_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_Payment_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_PaymentCancel_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_PaymentOther_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_PaymentOtherCancel_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_PaymentRecord_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_PaymentRefund_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_PayServiceTax_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_PropertyRemark_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_PropertyTransfer_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_RefundProperty_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_ReminderLetter_SaleFlat" />
+        <AssociationConnector Association="REMSDBModel.FK_UploadAgreement_SaleFlat" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

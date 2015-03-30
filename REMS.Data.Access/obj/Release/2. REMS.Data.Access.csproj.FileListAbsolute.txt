@@ -1,0 +1,34 @@
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\AutoMapper.Net4.dll
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\REMS.Data.Access.dll.config
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\REMS.Data.Access.dll
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\REMS.Data.Access.pdb
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\AutoMapper.dll
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\EntityFramework.dll
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\EntityFramework.SqlServer.dll
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\REMS.Data.dll
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\REMS.Data.pdb
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\AutoMapper.pdb
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\AutoMapper.xml
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\AutoMapper.Net4.pdb
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\EntityFramework.xml
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\bin\Release\EntityFramework.SqlServer.xml
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\obj\Release\2. REMS.Data.Access.csprojResolveAssemblyReference.cache
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\obj\Release\REMS.Data.Access.dll
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Data.Access\obj\Release\REMS.Data.Access.pdb
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\AutoMapper.Net4.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\REMS.Data.Access.dll.config
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\REMS.Data.Access.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\REMS.Data.Access.pdb
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\AutoMapper.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\EntityFramework.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\EntityFramework.SqlServer.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\REMS.Data.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\REMS.Data.pdb
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\AutoMapper.pdb
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\AutoMapper.xml
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\AutoMapper.Net4.pdb
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\EntityFramework.xml
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\bin\Release\EntityFramework.SqlServer.xml
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\obj\Release\2. REMS.Data.Access.csprojResolveAssemblyReference.cache
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\obj\Release\REMS.Data.Access.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data.Access\obj\Release\REMS.Data.Access.pdb

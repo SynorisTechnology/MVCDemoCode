@@ -1,0 +1,516 @@
+﻿    <!-- Left panel : Navigation area -->
+<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+<aside id="left-panel">
+
+    <!-- User info -->
+    @{ Html.RenderPartial("_CurrentUser"); }
+    <!-- end user info -->
+    <!-- NAVIGATION : This navigation is also responsive
+
+    To make this navigation dynamic please make sure to link the node
+    (the reference to the nav > ul) after page load. Or the navigation
+    will not initialize.
+    -->
+    <nav>
+        <!-- NOTE: Notice the gaps after each icon usage <i></i>..
+        Please note that these links work a bit different than
+        traditional href="" links. See documentation for details.
+        -->
+
+        <ul>
+            <li class="@Html.RouteIf("index","home","", "active")">
+                <a href="@Url.Action("index", "home", new { area = "" })" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
+            </li>
+            <li class="@Html.RouteIf("Index", "Security", "", "active")">
+                <a href="#"><i class="fa fa-lg fa-fw fa-key"></i> <span class="menu-item-parent"> Authorization</span></a>
+                <ul>
+                    <li class="@Html.RouteIf("flot", "Security", "Auth", "active")">
+                        <a href="@Url.Action("flot", "Security", new { area = "" })">Flot Charts</a>
+                    </li>
+                    <li class="@Html.RouteIf("flot", "Security", "Auth", "active")"><a href="@Url.Action("AssignPageToRole", "Security", new { area = "Admin" })">Assign Role Access</a></li>
+                    <li class="@Html.RouteIf("flot", "Security", "Auth", "active")"><a href="@Url.Action("AddNewUser", "Security", new { area = "Admin" })">Add New User</a></li>
+                    <li class="@Html.RouteIf("flot", "Security", "Auth", "active")"><a href="@Url.Action("AssingRoles", "Security", new { area = "Admin" })">User Access Right</a></li>
+                    <li class="@Html.RouteIf("flot", "Security", "Auth", "active")"><a href="@Url.Action("EditUserRole", "Security", new { area = "Admin" })">Edit User Role</a></li>
+                    <li class="@Html.RouteIf("flot", "Security", "Auth", "active")"><a href="@Url.Action("EditUserProperty", "Security", new { area = "Admin" })">Edit User Property</a></li>
+                    <li class="@Html.RouteIf("flot", "Security", "Auth", "active")"><a href="@Url.Action("ViewUsers", "Security", new { area = "Admin" })">View User</a></li>
+                </ul>
+            </li>
+            <li class="@Html.RouteIf("AddCharges", "AChargesCtrl", "Master", "active")">
+                <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">Master</span></a>
+                <ul>
+                    <li class="@Html.RouteIf("AddPlan", "PlanCtrl", "Master", "active")">
+                        <a href="@Url.Action("AddPlan", "PlanCtrl", new { area = "Master" })"> <span class="menu-item-parent">Plan Name</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("PlanTypeSalePrice", "PlanCtrl", "Master", "active")">
+                        <a href="@Url.Action("PlanTypeSalePrice", "PlanCtrl", new { area = "Master" })"> <span class="menu-item-parent">Plan Sale Price</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("Index", "InstallmentPlan", "Master", "active")">
+                        <a href="@Url.Action("Index", "InstallmentPlan", new { area = "Master" })"> <span class="menu-item-parent">Plan Installment</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("AddCharges", "AChargesCtrl", "Master", "active")">
+                        <a href="@Url.Action("AddCharges", "AChargesCtrl", new { area = "Master" })"> <span class="menu-item-parent">Additional Charges</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("AddPLC", "PLC", "Master", "active")">
+                        <a href="@Url.Action("AddPLC", "PLC", new { area = "Master" })"> <span class="menu-item-parent">Add PLC</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("Index", "Flat", "Master", "active")">
+                        <a href="@Url.Action("Index", "Flat", new { area = "Master" })"> <span class="menu-item-parent">Manage Flat Type</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("FlatSize", "Flat", "Master", "active")">
+                        <a href="@Url.Action("FlatSize", "Flat", new { area = "Master" })"> <span class="menu-item-parent">Flat Type Size</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="@Html.RouteIf("Index", "CreateProperty", "Admin", "active")">
+                <a href="#"><i class="fa fa-lg fa-fw fa-user-md"></i> <span class="menu-item-parent">Admin</span></a>
+                <ul>
+                    <li class="@Html.RouteIf("Index", "PropertyProject","Admin", "active")">
+                        <a href="#"> Property Projects</a>
+                        <ul>
+                            <li class="@Html.RouteIf("Index", "PropertyProject", "Admin", "active")">
+                                <a href="@Url.Action("Index", "PropertyProject", new { area = "Admin" })"><i class="fa fa-plane"></i> View Projects</a>
+                            </li>
+                            <li class="@Html.RouteIf("AddProject", "PropertyProject", "Admin", "active")">
+                                <a href="@Url.Action("AddProject", "PropertyProject", new { area = "Admin" })"><i class="glyphicon glyphicon-plane"></i> Add Project</a>
+                            </li>
+                            <li class="@Html.RouteIf("AddPropertyType", "PropertyProject", "Admin", "active")">
+                                <a href="@Url.Action("AddPropertyType", "PropertyProject", new { area = "Admin" })"><i class="fa fa-flag"></i> Add Property Type</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="@Html.RouteIf("Index", "CreateProperty", "Admin","active")">
+                        <a href="@Url.Action("Index", "CreateProperty", new { area = "Admin" })"> <span class="menu-item-parent">View Property</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("AddTower", "CreateProperty", "Admin", "active")">
+                        <a href="@Url.Action("AddTower", "CreateProperty", new { area = "Admin" })"> <span class="menu-item-parent">Add Tower</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("AddFloor", "CreateProperty", "Admin", "active")">
+                        <a href="@Url.Action("AddFloor", "CreateProperty", new { area = "Admin" })"> <span class="menu-item-parent">Add Floor</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("AddFlat", "CreateProperty", "Admin", "active")">
+                        <a href="@Url.Action("AddFlat", "CreateProperty", new { area = "Admin" })"> <span class="menu-item-parent">Generate Tower</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("EditFlat", "CreateProperty", "Admin", "active")">
+                        <a href="@Url.Action("EditFlat", "CreateProperty", new { area = "Admin" })"> <span class="menu-item-parent">Edit Flat</span></a>
+                    </li>
+                    <li class="@Html.RouteIf("UpdateFlaType", "CreateProperty", "Admin", "active")">
+                        <a href="@Url.Action("UpdateFlaType", "CreateProperty", new { area = "Admin" })"> <span class="menu-item-parent">Update Flat Type</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="@Html.RouteIf("Index", "Security", "", "active")">
+                <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent"> Sales</span></a>
+                <ul>
+                    <li class="@Html.RouteIf("flot", "Security", "Auth", "active")">
+                        <a href="@Url.Action("flot", "Security", new { area = "" })">New Sale/Booking</a>
+                    </li>
+                </ul>
+            </li>
+
+            @*<li class="@Html.RouteIf("inbox","Home","","active")">
+                    <a href="@Url.Action("inbox", "home", new { area = "" })"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Inbox</span><span class="badge pull-right inbox-badge">14</span></a>
+                </li>
+                <li class="@Html.RouteIf("flot","graphs","", "active")">
+                    <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">Graphs</span></a>
+                    <ul>
+                        <li class="@Html.RouteIf("flot", "graphs", "", "active")">
+                            <a href="@Url.Action("flot", "graphs", new { area = "" })">Flot Charts</a>
+                        </li>
+                        <li class="@Html.RouteIf("morris", "graphs", "", "active")">
+                            <a href="@Url.Action("morris", "graphs", new { area = "" })">Morris Charts</a>
+                        </li>
+                        <li class="@Html.RouteIf("inline", "graphs", "", "active")">
+                            <a href="@Url.Action("inline", "graphs", new { area = "" })">Inline Charts</a>
+                        </li>
+                        <li class="@Html.RouteIf("dygraphs", "graphs", "", "active")">
+                            <a href="@Url.Action("dygraphs", "graphs", new { area = "" })">Dygraphs</a>
+                        </li>
+                        <li class="@Html.RouteIf("chartjs", "graphs", "", "active")">
+                            <a href="@Url.Action("chartjs", "graphs", new { area = "" })">Chart.js <span class="badge pull-right inbox-badge bg-color-yellow">new</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="@Html.RouteIf("normal", "tables","", "active")">
+                    <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> <span class="menu-item-parent">Tables</span></a>
+                    <ul>
+                        <li class="@Html.RouteIf("normal", "tables", "", "active")">
+                            <a href="@Url.Action("normal", "tables", new { area = "" })">Normal Tables</a>
+                        </li>
+                        <li class="@Html.RouteIf("datatables", "tables", "", "active")">
+                            <a href="@Url.Action("datatables", "tables", new { area = "" })">Data Tables <span class=" badge inbox-badge bg-color-greenlight">v1.10</span></a>
+                        </li>
+                        <li class="@Html.RouteIf("jqgrid", "tables", "", "active")">
+                            <a href="@Url.Action("jqgrid", "tables", new { area = "" })">Jquery Grid</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="@Html.RouteIf("smartelements", "forms","", "active")">
+                    <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Forms</span></a>
+                    <ul>
+                        <li class="@Html.RouteIf("smartelements", "forms", "", "active")">
+                            <a href="@Url.Action("smartelements", "forms", new { area = "" })">Smart Form Elements</a>
+                        </li>
+                        <li class="@Html.RouteIf("templates", "forms", "", "active")">
+                            <a href="@Url.Action("templates", "forms", new { area = "" })">Smart Form Layouts</a>
+                        </li>
+                        <li class="@Html.RouteIf("validation", "forms", "", "active")">
+                            <a href="@Url.Action("validation", "forms", new { area = "" })">Smart Form Validation</a>
+                        </li>
+                        <li class="@Html.RouteIf("bootstrap", "forms", "", "active")">
+                            <a href="@Url.Action("bootstrap", "forms", new { area = "" })">Bootstrap Form Elements</a>
+                        </li>
+                        <li class="@Html.RouteIf("plugins", "forms", "", "active")">
+                            <a href="@Url.Action("plugins", "forms", new { area = "" })">Form Plugins</a>
+                        </li>
+                        <li class="@Html.RouteIf("wizards", "forms", "", "active")">
+                            <a href="@Url.Action("wizards", "forms")">Wizards</a>
+                        </li>
+                        <li class="@Html.RouteIf("editors", "forms", "", "active")">
+                            <a href="@Url.Action("editors", "forms", new { area = "" })">Bootstrap Editors</a>
+                        </li>
+                        <li class="@Html.RouteIf("dropzone", "forms", "", "active")">
+                            <a href="@Url.Action("dropzone", "forms", new { area = "" })">Dropzone </a>
+                        </li>
+                        <li class="@Html.RouteIf("cropping", "forms", "", "active")">
+                            <a href="@Url.Action("cropping", "forms", new { area = "" })">Image Cropping <span class="badge pull-right inbox-badge bg-color-yellow">new</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="@Html.RouteIf("general", "element","", "active")">
+                    <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> <span class="menu-item-parent">UI Elements</span></a>
+                    <ul>
+                        <li class="@Html.RouteIf("general", "element", "", "active")">
+                            <a href="@Url.Action("general", "element", new { area = "" })">General Elements</a>
+                        </li>
+                        <li class="@Html.RouteIf("buttons", "element", "", "active")">
+                            <a href="@Url.Action("buttons", "element", new { area = "" })">Buttons</a>
+                        </li>
+                        <li class="@Html.RouteIf("fontawesome", "icons","", "active")">
+                            <a href="#">Icons</a>
+                            <ul>
+                                <li class="@Html.RouteIf("fontawesome", "icons", "", "active")">
+                                    <a href="@Url.Action("fontawesome", "icons", new { area = "" })"><i class="fa fa-plane"></i> Font Awesome</a>
+                                </li>
+                                <li class="@Html.RouteIf("glyphicons", "icons", "", "active")">
+                                    <a href="@Url.Action("glyphicons", "icons", new { area = "" })"><i class="glyphicon glyphicon-plane"></i> Glyph Icons</a>
+                                </li>
+                                <li class="@Html.RouteIf("flags", "icons", "", "active")">
+                                    <a href="@Url.Action("flags", "icons", new { area = "" })"><i class="fa fa-flag"></i> Flags</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="@Html.RouteIf("grid","icons","", "active")">
+                            <a href="@Url.Action("grid", "icons", new { area = "" })">Grid</a>
+                        </li>
+                        <li class="@Html.RouteIf("treeview", "icons", "", "active")">
+                            <a href="@Url.Action("treeview", "icons", new { area = "" })">Tree View</a>
+                        </li>
+                        <li class="@Html.RouteIf("nestedlists", "icons", "", "active")">
+                            <a href="@Url.Action("nestedlists", "icons", new { area = "" })">Nestable Lists</a>
+                        </li>
+                        <li class="@Html.RouteIf("jqueryui", "icons", "", "active")">
+                            <a href="@Url.Action("jqueryui", "icons", new { area = "" })">JQuery UI</a>
+                        </li>
+                        <li class="@Html.RouteIf("typography", "icons", "", "active")">
+                            <a href="@Url.Action("typography", "icons", new { area = "" })">Typography</a>
+                        </li>
+                        <li>
+                            <a href="#">Six Level Menu</a>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-fw fa-folder-open"></i> Item #2</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fa fa-fw fa-folder-open"></i> Sub #2.1 </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-fw fa-file-text"></i> Item #2.1.1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-fw fa-plus"></i> Expand</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"><i class="fa fa-fw fa-file-text"></i> File</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="fa fa-fw fa-trash-o"></i> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-fw fa-folder-open"></i> Item #3</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fa fa-fw fa-folder-open"></i> 3ed Level </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-fw fa-file-text"></i> File</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-fw fa-file-text"></i> File</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="@Html.RouteIf("calendar","home","", "active")">
+                    <a href="@Url.Action("calendar", "home", new { area = "" })"><i class="fa fa-lg fa-fw fa-calendar"><em>3</em></i> <span class="menu-item-parent">Calendar</span></a>
+                </li>
+                <li class="@Html.RouteIf("widgets", "home", "", "active")">
+                    <a href="@Url.Action("widgets", "home", new { area = "" })"><i class="fa fa-lg fa-fw fa-list-alt"></i> <span class="menu-item-parent">Widgets</span></a>
+                </li>
+                <li class="@Html.RouteIf("projects", "appviews","", "active")">
+                    <a href="#"><i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span class="menu-item-parent">App Views</span></a>
+                    <ul>
+                        <li class="@Html.RouteIf("projects", "appviews", "", "active")">
+                            <a href="@Url.Action("projects", "appviews", new { area = "" })"><i class="fa fa-file-text-o"></i> Projects</a>
+                        </li>
+                        <li class="@Html.RouteIf("blog", "appviews", "", "active")">
+                            <a href="@Url.Action("blog", "appviews", new { area = "" })"><i class="fa fa-paragraph"></i> Blog</a>
+                        </li>
+                        <li class="@Html.RouteIf("gallery", "appviews", "", "active")">
+                            <a href="@Url.Action("gallery", "appviews", new { area = "" })"><i class="fa fa-picture-o"></i> Gallery</a>
+                        </li>
+                        <li class="@Html.RouteIf("generalview", "forum","", "active")">
+                            <a href="#"><i class="fa fa-comments"></i> Forum Layout</a>
+                            <ul>
+                                <li class="@Html.RouteIf("generalview", "forum", "", "active")">
+                                    <a href="@Url.Action("generalview", "forum", new { area = "" })">General View</a>
+                                </li>
+                                <li class="@Html.RouteIf("topicview", "forum", "", "active")">
+                                    <a href="@Url.Action("topicview", "forum", new { area = "" })">Topic View</a>
+                                </li>
+                                <li class="@Html.RouteIf("postview", "forum", "", "active")">
+                                    <a href="@Url.Action("postview", "forum", new { area = "" })">Post View</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="@Html.RouteIf("profile", "appviews","","active")">
+                            <a href="@Url.Action("profile", "appviews", new { area = "" })"><i class="fa fa-group"></i> Profile</a>
+                        </li>
+                        <li class="@Html.RouteIf("timeline", "appviews","","active")">
+                            <a href="@Url.Action("timeline", "appviews", new { area = "" })"><i class="fa fa-clock-o"></i> Timeline</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="@Html.RouteIf("googlemap", "home","", "active")">
+                    <a href="@Url.Action("googlemap", "home", new { area = "" })"><i class="fa fa-lg fa-fw fa-map-marker"></i> <span class="menu-item-parent">GMap Skins</span><span class="badge bg-color-greenLight pull-right inbox-badge">9</span></a>
+                </li>
+                <li class="@Html.RouteIf("pricing", "misc","", "active")">
+                    <a href="#"><i class="fa fa-lg fa-fw fa-windows"></i> <span class="menu-item-parent">Miscellaneous</span></a>
+                    <ul>
+                        <li>
+                            <a href="@Url.Action("index", "landing", new { area = "Landing" })" target="_blank">Landing Page <i class="fa fa-external-link"></i></a>
+                        </li>
+                        <li class="@Html.RouteIf("pricing", "misc", "", "active")">
+                            <a href="@Url.Action("pricing", "misc", new { area = "" })">Pricing Tables</a>
+                        </li>
+                        <li class="@Html.RouteIf("invoice","misc","", "active")">
+                            <a href="@Url.Action("invoice", "misc", new { area = "" })">Invoice</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("login", "account", new { area = "" })" target="_top">Login</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("register", "account", new { area = "" })" target="_top">Register</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("lock", "account", new { area = "" })" target="_top">Locked Screen</a>
+                        </li>
+                        <li class="@Html.RouteIf("error404", "misc", "", "active")">
+                            <a href="@Url.Action("error404", "misc", new { area = "" })">Error 404</a>
+                        </li>
+                        <li class="@Html.RouteIf("error500", "misc", "", "active")">
+                            <a href="@Url.Action("error500", "misc", new { area = "" })">Error 500</a>
+                        </li>
+                        <li class="@Html.RouteIf("blank", "misc", "", "active")">
+                            <a href="@Url.Action("blank", "misc", new { area = "" })">Blank Page</a>
+                        </li>
+                        <li class="@Html.RouteIf("emailtemplate", "misc", "", "active")">
+                            <a href="@Url.Action("emailtemplate", "misc", new { area = "" })">Email Template</a>
+                        </li>
+                        <li class="@Html.RouteIf("search", "misc", "", "active")">
+                            <a href="@Url.Action("search", "misc", new { area = "" })">Search Page</a>
+                        </li>
+                        <li class="@Html.RouteIf("ckeditor",  "misc","","active")">
+                            <a href="@Url.Action("ckeditor", "misc", new { area = "" })">CK Editor</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-menu-invisible @Html.RouteIf("versions", "intel","", "active")">
+                    <a href="#"><i class="fa fa-lg fa-fw fa-cube txt-color-blue"></i> <span class="menu-item-parent">SmartAdmin Intel</span></a>
+                    <ul>
+                        <li class="@Html.RouteIf("versions", "intel", "", "active")">
+                            <a href="@Url.Action("versions", "intel", new { area = "" })"><i class="fa fa-stack-overflow"></i> Different Versions</a>
+                        </li>
+                        <li class="@Html.RouteIf("settings",  "intel","","active")">
+                            <a href="@Url.Action("settings", "intel", new { area = "" })"><i class="fa fa-cube"></i> App Settings</a>
+                        </li>
+                        <li>
+                            <a href="http://bootstraphunter.com/smartadmin/BUGTRACK/track_/documentation/index.html" target="_blank"><i class="fa fa-book"></i> Documentation</a>
+                        </li>
+                        <li>
+                            <a href="http://bootstraphunter.com/smartadmin/BUGTRACK/track_/" target="_blank"><i class="fa fa-bug"></i> Bug Tracker</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chat-users top-menu-invisible">
+                    <a href="#"><i class="fa fa-lg fa-fw fa-comment-o"><em class="bg-color-pink flash animated">!</em></i> <span class="menu-item-parent">Smart Chat API <sup>beta</sup></span></a>
+                    <ul>
+                        <li class="@Html.RouteIf("chat","home","", "active")">
+                            <div class="display-users">
+                                <input class="form-control chat-user-filter" placeholder="Filter" type="text">
+                                <dl>
+                                    <dt>
+                                        <a href="#" class="usr"
+                                           data-chat-id="cha1"
+                                           data-chat-fname="Sadi"
+                                           data-chat-lname="Orlaf"
+                                           data-chat-status="busy"
+                                           data-chat-alertmsg="Sadi Orlaf is in a meeting. Please do not disturb!"
+                                           data-chat-alertshow="true"
+                                           rel="popover-hover"
+                                           data-placement="right"
+                                           data-html="true"
+                                           data-content="
+                                                    <div class='usr-card'>
+                                                        <img src='/content/img/avatars/5.png' alt='Sadi Orlaf'>
+                                                        <div class='usr-card-content'>
+                                                            <h3>Sadi Orlaf</h3>
+                                                            <p>Marketing Executive</p>
+                                                        </div>
+                                                    </div>
+                                                ">
+                                                <i></i>Sadi Orlaf
+                                        </a>
+                                    </dt>
+                                    <dt>
+                                        <a href="#" class="usr"
+                                           data-chat-id="cha2"
+                                           data-chat-fname="Jessica"
+                                           data-chat-lname="Dolof"
+                                           data-chat-status="online"
+                                           data-chat-alertmsg=""
+                                           data-chat-alertshow="false"
+                                           rel="popover-hover"
+                                           data-placement="right"
+                                           data-html="true"
+                                           data-content="
+                                                    <div class='usr-card'>
+                                                        <img src='/content/img/avatars/1.png' alt='Jessica Dolof'>
+                                                        <div class='usr-card-content'>
+                                                            <h3>Jessica Dolof</h3>
+                                                            <p>Sales Administrator</p>
+                                                        </div>
+                                                    </div>
+                                                ">
+                                                <i></i>Jessica Dolof
+                                        </a>
+                                    </dt>
+                                    <dt>
+                                        <a href="#" class="usr"
+                                           data-chat-id="cha3"
+                                           data-chat-fname="Zekarburg"
+                                           data-chat-lname="Almandalie"
+                                           data-chat-status="online"
+                                           rel="popover-hover"
+                                           data-placement="right"
+                                           data-html="true"
+                                           data-content="
+                                                    <div class='usr-card'>
+                                                        <img src='/content/img/avatars/3.png' alt='Zekarburg Almandalie'>
+                                                        <div class='usr-card-content'>
+                                                            <h3>Zekarburg Almandalie</h3>
+                                                            <p>Sales Admin</p>
+                                                        </div>
+                                                    </div>
+                                                ">
+                                                <i></i>Zekarburg Almandalie
+                                        </a>
+                                    </dt>
+                                    <dt>
+                                        <a href="#" class="usr"
+                                           data-chat-id="cha4"
+                                           data-chat-fname="Barley"
+                                           data-chat-lname="Krazurkth"
+                                           data-chat-status="away"
+                                           rel="popover-hover"
+                                           data-placement="right"
+                                           data-html="true"
+                                           data-content="
+                                                    <div class='usr-card'>
+                                                        <img src='/content/img/avatars/4.png' alt='Barley Krazurkth'>
+                                                        <div class='usr-card-content'>
+                                                            <h3>Barley Krazurkth</h3>
+                                                            <p>Sales Director</p>
+                                                        </div>
+                                                    </div>
+                                                ">
+                                                <i></i>Barley Krazurkth
+                                        </a>
+                                    </dt>
+                                    <dt>
+                                        <a href="#" class="usr offline"
+                                           data-chat-id="cha5"
+                                           data-chat-fname="Carmen"
+                                           data-chat-lname="Electra"
+                                           data-chat-status="incognito"
+                                           rel="popover-hover"
+                                           data-placement="right"
+                                           data-html="true"
+                                           data-content="
+                                                    <div class='usr-card'>
+                                                        <img src='/content/img/avatars/female.png' alt='Carmen Electra'>
+                                                        <div class='usr-card-content'>
+                                                            <h3>Carmen Electra</h3>
+                                                            <p>Support Admin <small><i class='fa fa-music'></i> Playing Beethoven Classics</small></p>
+                                                        </div>
+                                                    </div>
+                                                ">
+                                                <i></i>Carmen Electra (offline)
+                                        </a>
+                                    </dt>
+                                    <dt>
+                                        <a href="#" class="usr offline"
+                                           data-chat-id="cha6"
+                                           data-chat-fname="Lezley"
+                                           data-chat-lname="Jacob"
+                                           data-chat-status="incognito"
+                                           rel="popover-hover"
+                                           data-placement="right"
+                                           data-html="true"
+                                           data-content="
+                                                    <div class='usr-card'>
+                                                        <img src='/content/img/avatars/male.png' alt='Lezley Jacob'>
+                                                        <div class='usr-card-content'>
+                                                            <h3>Lezley Jacob</h3>
+                                                            <p>Sales Director</p>
+                                                        </div>
+                                                    </div>
+                                                ">
+                                                <i></i>Lezley Jacob (offline)
+                                        </a>
+                                    </dt>
+                                </dl>
+
+                                <a href="@Url.Action("chat", "home", new { area=""})" class="btn btn-xs btn-default btn-block sa-chat-learnmore-btn">About the API</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>*@
+        </ul>
+    </nav>
+    <span class="minifyme" data-action="minifyMenu">
+        <i class="fa fa-arrow-circle-left hit"></i>
+    </span>
+
+</aside>
+<!-- END NAVIGATION -->

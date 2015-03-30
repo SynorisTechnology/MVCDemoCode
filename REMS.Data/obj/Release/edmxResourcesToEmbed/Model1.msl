@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="REMSDBModelStoreContainer" CdmEntityContainer="REMSDBEntities">
+    <EntitySetMapping Name="AdditionalCharges">
+      <EntityTypeMapping TypeName="REMSDBModel.AdditionalCharge">
+        <MappingFragment StoreEntitySet="AdditionalCharge">
+          <ScalarProperty Name="AdditionalChargeID" ColumnName="AdditionalChargeID" />
+          <ScalarProperty Name="TowerID" ColumnName="TowerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="ChargeType" ColumnName="ChargeType" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="CrBy" ColumnName="CrBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlatCharges">
+      <EntityTypeMapping TypeName="REMSDBModel.FlatCharge">
+        <MappingFragment StoreEntitySet="FlatCharge">
+          <ScalarProperty Name="FlatChargeID" ColumnName="FlatChargeID" />
+          <ScalarProperty Name="FlatID" ColumnName="FlatID" />
+          <ScalarProperty Name="AdditionalChargeID" ColumnName="AdditionalChargeID" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Floors">
+      <EntityTypeMapping TypeName="REMSDBModel.Floor">
+        <MappingFragment StoreEntitySet="Floor">
+          <ScalarProperty Name="FloorID" ColumnName="FloorID" />
+          <ScalarProperty Name="TowerID" ColumnName="TowerID" />
+          <ScalarProperty Name="FloorNo" ColumnName="FloorNo" />
+          <ScalarProperty Name="FloorName" ColumnName="FloorName" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="CrBy" ColumnName="CrBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plans">
+      <EntityTypeMapping TypeName="REMSDBModel.Plan">
+        <MappingFragment StoreEntitySet="Plan">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLCs">
+      <EntityTypeMapping TypeName="REMSDBModel.PLC">
+        <MappingFragment StoreEntitySet="PLC">
+          <ScalarProperty Name="PLCID" ColumnName="PLCID" />
+          <ScalarProperty Name="PLCName" ColumnName="PLCName" />
+          <ScalarProperty Name="AmountSqFt" ColumnName="AmountSqFt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Flats">
+      <EntityTypeMapping TypeName="REMSDBModel.Flat">
+        <MappingFragment StoreEntitySet="Flat">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="FlatOrder" ColumnName="FlatOrder" />
+          <ScalarProperty Name="CrBy" ColumnName="CrBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="HomeAutomation" ColumnName="HomeAutomation" />
+          <ScalarProperty Name="GASLine" ColumnName="GASLine" />
+          <ScalarProperty Name="PowerBackup" ColumnName="PowerBackup" />
+          <ScalarProperty Name="WashingArea" ColumnName="WashingArea" />
+          <ScalarProperty Name="Cupboards" ColumnName="Cupboards" />
+          <ScalarProperty Name="Intercom" ColumnName="Intercom" />
+          <ScalarProperty Name="AC" ColumnName="AC" />
+          <ScalarProperty Name="StudyRoom" ColumnName="StudyRoom" />
+          <ScalarProperty Name="PoojaRoom" ColumnName="PoojaRoom" />
+          <ScalarProperty Name="BathRooms" ColumnName="BathRooms" />
+          <ScalarProperty Name="Balconies" ColumnName="Balconies" />
+          <ScalarProperty Name="Kitchen" ColumnName="Kitchen" />
+          <ScalarProperty Name="ServantRoom" ColumnName="ServantRoom" />
+          <ScalarProperty Name="LivingRoom" ColumnName="LivingRoom" />
+          <ScalarProperty Name="IsFurnished" ColumnName="IsFurnished" />
+          <ScalarProperty Name="BadRooms" ColumnName="BadRooms" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="FlatSizeUnit" ColumnName="FlatSizeUnit" />
+          <ScalarProperty Name="FlatSize" ColumnName="FlatSize" />
+          <ScalarProperty Name="FlatNo" ColumnName="FlatNo" />
+          <ScalarProperty Name="FlatName" ColumnName="FlatName" />
+          <ScalarProperty Name="FlatType" ColumnName="FlatType" />
+          <ScalarProperty Name="FloorID" ColumnName="FloorID" />
+          <ScalarProperty Name="FlatID" ColumnName="FlatID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Errors">
+      <EntityTypeMapping TypeName="REMSDBModel.Error">
+        <MappingFragment StoreEntitySet="Error">
+          <ScalarProperty Name="ErrorID" ColumnName="ErrorID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FullURL" ColumnName="FullURL" />
+          <ScalarProperty Name="ChangedOn" ColumnName="ChangedOn" />
+          <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PathAndQuery" ColumnName="PathAndQuery" />
+          <ScalarProperty Name="HttpReferer" ColumnName="HttpReferer" />
+          <ScalarProperty Name="Everything" ColumnName="Everything" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Exception" ColumnName="Exception" />
+          <ScalarProperty Name="UserAgent" ColumnName="UserAgent" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="ErrorDate" ColumnName="ErrorDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlatPLCs">
+      <EntityTypeMapping TypeName="REMSDBModel.FlatPLC">
+        <MappingFragment StoreEntitySet="FlatPLC">
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="PLCID" ColumnName="PLCID" />
+          <ScalarProperty Name="FlatID" ColumnName="FlatID" />
+          <ScalarProperty Name="FlatPLCID" ColumnName="FlatPLCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="REMSDBModel.Project">
+        <MappingFragment StoreEntitySet="Project">
+          <ScalarProperty Name="AuthoritySign" ColumnName="AuthoritySign" />
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+          <ScalarProperty Name="PossessionDate" ColumnName="PossessionDate" />
+          <ScalarProperty Name="Jurisdiction" ColumnName="Jurisdiction" />
+          <ScalarProperty Name="Tehsil" ColumnName="Tehsil" />
+          <ScalarProperty Name="Village" ColumnName="Village" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="OfficeAddress" ColumnName="OfficeAddress" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="ReceiptPrefix" ColumnName="ReceiptPrefix" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="PName" ColumnName="PName" />
+          <ScalarProperty Name="CrBy" ColumnName="CrBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectTypes">
+      <EntityTypeMapping TypeName="REMSDBModel.ProjectType">
+        <MappingFragment StoreEntitySet="ProjectType">
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="CrBy" ColumnName="CrBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="ProjectTypeID" ColumnName="ProjectTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Towers">
+      <EntityTypeMapping TypeName="REMSDBModel.Tower">
+        <MappingFragment StoreEntitySet="Tower">
+          <ScalarProperty Name="CrBy" ColumnName="CrBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="InternalRoad" ColumnName="InternalRoad" />
+          <ScalarProperty Name="Internet" ColumnName="Internet" />
+          <ScalarProperty Name="Lift" ColumnName="Lift" />
+          <ScalarProperty Name="JoggingTrack" ColumnName="JoggingTrack" />
+          <ScalarProperty Name="ClubHourse" ColumnName="ClubHourse" />
+          <ScalarProperty Name="CommunityHall" ColumnName="CommunityHall" />
+          <ScalarProperty Name="Library" ColumnName="Library" />
+          <ScalarProperty Name="Garden" ColumnName="Garden" />
+          <ScalarProperty Name="Gym" ColumnName="Gym" />
+          <ScalarProperty Name="SwimmingPool" ColumnName="SwimmingPool" />
+          <ScalarProperty Name="PowerBackup" ColumnName="PowerBackup" />
+          <ScalarProperty Name="PlayArea" ColumnName="PlayArea" />
+          <ScalarProperty Name="Security" ColumnName="Security" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="TowerNo" ColumnName="TowerNo" />
+          <ScalarProperty Name="TowerName" ColumnName="TowerName" />
+          <ScalarProperty Name="ProjectTypeID" ColumnName="ProjectTypeID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="TowerID" ColumnName="TowerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlatTypes">
+      <EntityTypeMapping TypeName="REMSDBModel.FlatType">
+        <MappingFragment StoreEntitySet="FlatType">
+          <ScalarProperty Name="IsFurnished" ColumnName="IsFurnished" />
+          <ScalarProperty Name="CrBy" ColumnName="CrBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="FType" ColumnName="FType" />
+          <ScalarProperty Name="FlatTypeID" ColumnName="FlatTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlatTypeSizes">
+      <EntityTypeMapping TypeName="REMSDBModel.FlatTypeSize">
+        <MappingFragment StoreEntitySet="FlatTypeSize">
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="FlatTypeID" ColumnName="FlatTypeID" />
+          <ScalarProperty Name="FlatTypeSizeID" ColumnName="FlatTypeSizeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanTypeMasters">
+      <EntityTypeMapping TypeName="REMSDBModel.PlanTypeMaster">
+        <MappingFragment StoreEntitySet="PlanTypeMaster">
+          <ScalarProperty Name="FlatTypeSizeID" ColumnName="FlatTypeSizeID" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="AmountSqFt" ColumnName="AmountSqFt" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+          <ScalarProperty Name="PlanTypeMasterID" ColumnName="PlanTypeMasterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanInstallments">
+      <EntityTypeMapping TypeName="REMSDBModel.PlanInstallment">
+        <MappingFragment StoreEntitySet="PlanInstallment">
+          <ScalarProperty Name="CrBy" ColumnName="CrBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="InstallmentNo" ColumnName="InstallmentNo" />
+          <ScalarProperty Name="Installment" ColumnName="Installment" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+          <ScalarProperty Name="PlanInstallmentID" ColumnName="PlanInstallmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Agreements">
+      <EntityTypeMapping TypeName="REMSDBModel.Agreement">
+        <MappingFragment StoreEntitySet="Agreement">
+          <ScalarProperty Name="AssuredHTMLURL" ColumnName="AssuredHTMLURL" />
+          <ScalarProperty Name="AssuredDocURL" ColumnName="AssuredDocURL" />
+          <ScalarProperty Name="WelComeLetter" ColumnName="WelComeLetter" />
+          <ScalarProperty Name="AllotmentLetterDate" ColumnName="AllotmentLetterDate" />
+          <ScalarProperty Name="AllotmentLetterBy" ColumnName="AllotmentLetterBy" />
+          <ScalarProperty Name="AllotmentLetter" ColumnName="AllotmentLetter" />
+          <ScalarProperty Name="UploadURL" ColumnName="UploadURL" />
+          <ScalarProperty Name="UploadBy" ColumnName="UploadBy" />
+          <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+          <ScalarProperty Name="HTMLURL" ColumnName="HTMLURL" />
+          <ScalarProperty Name="DocURL" ColumnName="DocURL" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AgreementAmount" ColumnName="AgreementAmount" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="AgreementID" ColumnName="AgreementID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssuredReturns">
+      <EntityTypeMapping TypeName="REMSDBModel.AssuredReturn">
+        <MappingFragment StoreEntitySet="AssuredReturn">
+          <ScalarProperty Name="TDS" ColumnName="TDS" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="MonthName" ColumnName="MonthName" />
+          <ScalarProperty Name="FlatName" ColumnName="FlatName" />
+          <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="AssuredReturnID" ColumnName="AssuredReturnID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssuredReturnPayments">
+      <EntityTypeMapping TypeName="REMSDBModel.AssuredReturnPayment">
+        <MappingFragment StoreEntitySet="AssuredReturnPayment">
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="AssuredReturnID" ColumnName="AssuredReturnID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="IsBounce" ColumnName="IsBounce" />
+          <ScalarProperty Name="ClearanceCharge" ColumnName="ClearanceCharge" />
+          <ScalarProperty Name="RefundRemark" ColumnName="RefundRemark" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="FlatName" ColumnName="FlatName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="IsReceipt" ColumnName="IsReceipt" />
+          <ScalarProperty Name="AmtRcvdinWords" ColumnName="AmtRcvdinWords" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="BankClearanceDate" ColumnName="BankClearanceDate" />
+          <ScalarProperty Name="BankCharges" ColumnName="BankCharges" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+          <ScalarProperty Name="ARPaymentID" ColumnName="ARPaymentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BankMasters">
+      <EntityTypeMapping TypeName="REMSDBModel.BankMaster">
+        <MappingFragment StoreEntitySet="BankMaster">
+          <ScalarProperty Name="BankAddress" ColumnName="BankAddress" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrokerMasters">
+      <EntityTypeMapping TypeName="REMSDBModel.BrokerMaster">
+        <MappingFragment StoreEntitySet="BrokerMaster">
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="PanNo" ColumnName="PanNo" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="BrokerName" ColumnName="BrokerName" />
+          <ScalarProperty Name="BrokerID" ColumnName="BrokerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrokerPayments">
+      <EntityTypeMapping TypeName="REMSDBModel.BrokerPayment">
+        <MappingFragment StoreEntitySet="BrokerPayment">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+          <ScalarProperty Name="AmountPaid" ColumnName="AmountPaid" />
+          <ScalarProperty Name="BrokerID" ColumnName="BrokerID" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="FlatID" ColumnName="FlatID" />
+          <ScalarProperty Name="BrokerPaymentID" ColumnName="BrokerPaymentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrokerToProperties">
+      <EntityTypeMapping TypeName="REMSDBModel.BrokerToProperty">
+        <MappingFragment StoreEntitySet="BrokerToProperty">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ApproveStatus" ColumnName="ApproveStatus" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="BrokerAmount" ColumnName="BrokerAmount" />
+          <ScalarProperty Name="BrokerID" ColumnName="BrokerID" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="FlatID" ColumnName="FlatID" />
+          <ScalarProperty Name="BrokerToPropertyID" ColumnName="BrokerToPropertyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CityMasters">
+      <EntityTypeMapping TypeName="REMSDBModel.CityMaster">
+        <MappingFragment StoreEntitySet="CityMaster">
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="REMSDBModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="SaleStatus" ColumnName="SaleStatus" />
+          <ScalarProperty Name="affidavit" ColumnName="affidavit" />
+          <ScalarProperty Name="panallowstatus" ColumnName="panallowstatus" />
+          <ScalarProperty Name="LegalOptionDate" ColumnName="LegalOptionDate" />
+          <ScalarProperty Name="Distt" ColumnName="Distt" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="TransferAmount" ColumnName="TransferAmount" />
+          <ScalarProperty Name="SecCoPinCode" ColumnName="SecCoPinCode" />
+          <ScalarProperty Name="CoPinCode" ColumnName="CoPinCode" />
+          <ScalarProperty Name="ExecutiveName" ColumnName="ExecutiveName" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="IsEdit" ColumnName="IsEdit" />
+          <ScalarProperty Name="SecCoPANImagePath" ColumnName="SecCoPANImagePath" />
+          <ScalarProperty Name="SecCoRationCardImagePath" ColumnName="SecCoRationCardImagePath" />
+          <ScalarProperty Name="SecCoPassportImagePath" ColumnName="SecCoPassportImagePath" />
+          <ScalarProperty Name="SecCoVoterCardImagePath" ColumnName="SecCoVoterCardImagePath" />
+          <ScalarProperty Name="SecCoDVImagePath" ColumnName="SecCoDVImagePath" />
+          <ScalarProperty Name="SecCoAddPfImagePath" ColumnName="SecCoAddPfImagePath" />
+          <ScalarProperty Name="SecCoPhotoImagePath" ColumnName="SecCoPhotoImagePath" />
+          <ScalarProperty Name="CoPANImagePath" ColumnName="CoPANImagePath" />
+          <ScalarProperty Name="CoRationCardImagePath" ColumnName="CoRationCardImagePath" />
+          <ScalarProperty Name="CoPassportImagePath" ColumnName="CoPassportImagePath" />
+          <ScalarProperty Name="CoVoterCardImagePath" ColumnName="CoVoterCardImagePath" />
+          <ScalarProperty Name="CoDVImagePath" ColumnName="CoDVImagePath" />
+          <ScalarProperty Name="CoAddPfImagePath" ColumnName="CoAddPfImagePath" />
+          <ScalarProperty Name="CoPhotoImagePath" ColumnName="CoPhotoImagePath" />
+          <ScalarProperty Name="SecCoIsPassport" ColumnName="SecCoIsPassport" />
+          <ScalarProperty Name="SecCoIsVoterCard" ColumnName="SecCoIsVoterCard" />
+          <ScalarProperty Name="SecCoIsDrivingLicence" ColumnName="SecCoIsDrivingLicence" />
+          <ScalarProperty Name="SecCoIsRationCard" ColumnName="SecCoIsRationCard" />
+          <ScalarProperty Name="SecCoIsAddressPf" ColumnName="SecCoIsAddressPf" />
+          <ScalarProperty Name="SecCoIsPhoto" ColumnName="SecCoIsPhoto" />
+          <ScalarProperty Name="SecCoIsPAN" ColumnName="SecCoIsPAN" />
+          <ScalarProperty Name="CoIsPassport" ColumnName="CoIsPassport" />
+          <ScalarProperty Name="CoIsVoterCard" ColumnName="CoIsVoterCard" />
+          <ScalarProperty Name="CoIsDrivingLicence" ColumnName="CoIsDrivingLicence" />
+          <ScalarProperty Name="CoIsRationCard" ColumnName="CoIsRationCard" />
+          <ScalarProperty Name="CoIsAddressPf" ColumnName="CoIsAddressPf" />
+          <ScalarProperty Name="CoIsPhoto" ColumnName="CoIsPhoto" />
+          <ScalarProperty Name="CoIsPAN" ColumnName="CoIsPAN" />
+          <ScalarProperty Name="PANImagePath" ColumnName="PANImagePath" />
+          <ScalarProperty Name="SecCoDOB" ColumnName="SecCoDOB" />
+          <ScalarProperty Name="CoDOB" ColumnName="CoDOB" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RationCardImagePath" ColumnName="RationCardImagePath" />
+          <ScalarProperty Name="PassportImagePath" ColumnName="PassportImagePath" />
+          <ScalarProperty Name="VoterCardImagePath" ColumnName="VoterCardImagePath" />
+          <ScalarProperty Name="DVImagePath" ColumnName="DVImagePath" />
+          <ScalarProperty Name="AddPfImagePath" ColumnName="AddPfImagePath" />
+          <ScalarProperty Name="PhotoImagePath" ColumnName="PhotoImagePath" />
+          <ScalarProperty Name="IsConstruction" ColumnName="IsConstruction" />
+          <ScalarProperty Name="SecCoPName" ColumnName="SecCoPName" />
+          <ScalarProperty Name="SecCoTitle" ColumnName="SecCoTitle" />
+          <ScalarProperty Name="CoPName" ColumnName="CoPName" />
+          <ScalarProperty Name="CoTitle" ColumnName="CoTitle" />
+          <ScalarProperty Name="SecCoPAN" ColumnName="SecCoPAN" />
+          <ScalarProperty Name="SecCoMobileNo" ColumnName="SecCoMobileNo" />
+          <ScalarProperty Name="SecCoCountry" ColumnName="SecCoCountry" />
+          <ScalarProperty Name="SecCoState" ColumnName="SecCoState" />
+          <ScalarProperty Name="SecCoCity" ColumnName="SecCoCity" />
+          <ScalarProperty Name="SecCoAddress2" ColumnName="SecCoAddress2" />
+          <ScalarProperty Name="SecCoAddress1" ColumnName="SecCoAddress1" />
+          <ScalarProperty Name="SecCoLName" ColumnName="SecCoLName" />
+          <ScalarProperty Name="SecCoMName" ColumnName="SecCoMName" />
+          <ScalarProperty Name="SecCoFName" ColumnName="SecCoFName" />
+          <ScalarProperty Name="SecCoAppTitle" ColumnName="SecCoAppTitle" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsTransfer" ColumnName="IsTransfer" />
+          <ScalarProperty Name="IsVoterCard" ColumnName="IsVoterCard" />
+          <ScalarProperty Name="IsPassport" ColumnName="IsPassport" />
+          <ScalarProperty Name="IsDrivingLicence" ColumnName="IsDrivingLicence" />
+          <ScalarProperty Name="IsRationCard" ColumnName="IsRationCard" />
+          <ScalarProperty Name="IsAddressPf" ColumnName="IsAddressPf" />
+          <ScalarProperty Name="IsPhoto" ColumnName="IsPhoto" />
+          <ScalarProperty Name="IsPAN" ColumnName="IsPAN" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="BankAddress" ColumnName="BankAddress" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="LienField" ColumnName="LienField" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="AlternateEmail" ColumnName="AlternateEmail" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="LandLine" ColumnName="LandLine" />
+          <ScalarProperty Name="AlternateMobile" ColumnName="AlternateMobile" />
+          <ScalarProperty Name="MobileOut" ColumnName="MobileOut" />
+          <ScalarProperty Name="PANOut" ColumnName="PANOut" />
+          <ScalarProperty Name="CountryOut" ColumnName="CountryOut" />
+          <ScalarProperty Name="StateOut" ColumnName="StateOut" />
+          <ScalarProperty Name="CityOut" ColumnName="CityOut" />
+          <ScalarProperty Name="Address2Out" ColumnName="Address2Out" />
+          <ScalarProperty Name="Address1Out" ColumnName="Address1Out" />
+          <ScalarProperty Name="CoMobileNo" ColumnName="CoMobileNo" />
+          <ScalarProperty Name="CoPAN" ColumnName="CoPAN" />
+          <ScalarProperty Name="CoCountry" ColumnName="CoCountry" />
+          <ScalarProperty Name="CoState" ColumnName="CoState" />
+          <ScalarProperty Name="CoCity" ColumnName="CoCity" />
+          <ScalarProperty Name="CoAddress2" ColumnName="CoAddress2" />
+          <ScalarProperty Name="CoAddress1" ColumnName="CoAddress1" />
+          <ScalarProperty Name="CoLName" ColumnName="CoLName" />
+          <ScalarProperty Name="CoMName" ColumnName="CoMName" />
+          <ScalarProperty Name="CoFName" ColumnName="CoFName" />
+          <ScalarProperty Name="CoAppTitle" ColumnName="CoAppTitle" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="PName" ColumnName="PName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="MName" ColumnName="MName" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="AppTitle" ColumnName="AppTitle" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventMasters">
+      <EntityTypeMapping TypeName="REMSDBModel.EventMaster">
+        <MappingFragment StoreEntitySet="EventMaster">
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="EventDesc" ColumnName="EventDesc" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlatInstallmentDetails">
+      <EntityTypeMapping TypeName="REMSDBModel.FlatInstallmentDetail">
+        <MappingFragment StoreEntitySet="FlatInstallmentDetail">
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="InstallmentOrder" ColumnName="InstallmentOrder" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="TotalAmtInWords" ColumnName="TotalAmtInWords" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="InstallmentID" ColumnName="InstallmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LatePayments">
+      <EntityTypeMapping TypeName="REMSDBModel.LatePayment">
+        <MappingFragment StoreEntitySet="LatePayment">
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="ReceiveAmount" ColumnName="ReceiveAmount" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="InstallmentNo" ColumnName="InstallmentNo" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="LatePaymentID" ColumnName="LatePaymentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuleLists">
+      <EntityTypeMapping TypeName="REMSDBModel.ModuleList">
+        <MappingFragment StoreEntitySet="ModuleList">
+          <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModuleListID" ColumnName="ModuleListID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="REMSDBModel.Payment">
+        <MappingFragment StoreEntitySet="Payment">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="IsBounce" ColumnName="IsBounce" />
+          <ScalarProperty Name="ClearanceCharge" ColumnName="ClearanceCharge" />
+          <ScalarProperty Name="RefundRemark" ColumnName="RefundRemark" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="isrefund" ColumnName="isrefund" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="FlatName" ColumnName="FlatName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="IsReceipt" ColumnName="IsReceipt" />
+          <ScalarProperty Name="AmtRcvdinWords" ColumnName="AmtRcvdinWords" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="BankClearanceDate" ColumnName="BankClearanceDate" />
+          <ScalarProperty Name="BankCharges" ColumnName="BankCharges" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="ServiceTaxAmount" ColumnName="ServiceTaxAmount" />
+          <ScalarProperty Name="DueAmount" ColumnName="DueAmount" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="PaymentNo" ColumnName="PaymentNo" />
+          <ScalarProperty Name="InstallmentNo" ColumnName="InstallmentNo" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentCancels">
+      <EntityTypeMapping TypeName="REMSDBModel.PaymentCancel">
+        <MappingFragment StoreEntitySet="PaymentCancel">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UnCancelBy" ColumnName="UnCancelBy" />
+          <ScalarProperty Name="CancelBy" ColumnName="CancelBy" />
+          <ScalarProperty Name="UnCancelRemark" ColumnName="UnCancelRemark" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="UnCancelDate" ColumnName="UnCancelDate" />
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="PaymentCancelID" ColumnName="PaymentCancelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentOthers">
+      <EntityTypeMapping TypeName="REMSDBModel.PaymentOther">
+        <MappingFragment StoreEntitySet="PaymentOther">
+          <ScalarProperty Name="PaymentFor" ColumnName="PaymentFor" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="IsBounce" ColumnName="IsBounce" />
+          <ScalarProperty Name="ClearanceCharge" ColumnName="ClearanceCharge" />
+          <ScalarProperty Name="RefundRemark" ColumnName="RefundRemark" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="isrefund" ColumnName="isrefund" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="FlatName" ColumnName="FlatName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="IsReceipt" ColumnName="IsReceipt" />
+          <ScalarProperty Name="AmtRcvdinWords" ColumnName="AmtRcvdinWords" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="BankClearanceDate" ColumnName="BankClearanceDate" />
+          <ScalarProperty Name="BankCharges" ColumnName="BankCharges" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="PaymentNo" ColumnName="PaymentNo" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="PaymentOtherID" ColumnName="PaymentOtherID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentOtherCancels">
+      <EntityTypeMapping TypeName="REMSDBModel.PaymentOtherCancel">
+        <MappingFragment StoreEntitySet="PaymentOtherCancel">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UnCancelBy" ColumnName="UnCancelBy" />
+          <ScalarProperty Name="CancelBy" ColumnName="CancelBy" />
+          <ScalarProperty Name="UnCancelRemark" ColumnName="UnCancelRemark" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="UnCancelDate" ColumnName="UnCancelDate" />
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="PaymentOtherCancelID" ColumnName="PaymentOtherCancelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentRecords">
+      <EntityTypeMapping TypeName="REMSDBModel.PaymentRecord">
+        <MappingFragment StoreEntitySet="PaymentRecord">
+          <ScalarProperty Name="BalanceAmount" ColumnName="BalanceAmount" />
+          <ScalarProperty Name="PayType" ColumnName="PayType" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="PayDate" ColumnName="PayDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="PaymentRecordID" ColumnName="PaymentRecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentRefunds">
+      <EntityTypeMapping TypeName="REMSDBModel.PaymentRefund">
+        <MappingFragment StoreEntitySet="PaymentRefund">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="IsVoterCard" ColumnName="IsVoterCard" />
+          <ScalarProperty Name="IsPassport" ColumnName="IsPassport" />
+          <ScalarProperty Name="IsDrivingLicence" ColumnName="IsDrivingLicence" />
+          <ScalarProperty Name="IsRationCard" ColumnName="IsRationCard" />
+          <ScalarProperty Name="IsAddressPf" ColumnName="IsAddressPf" />
+          <ScalarProperty Name="IsPhoto" ColumnName="IsPhoto" />
+          <ScalarProperty Name="IsPan" ColumnName="IsPan" />
+          <ScalarProperty Name="RefundDate" ColumnName="RefundDate" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="RefundAmount" ColumnName="RefundAmount" />
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="RefundID" ColumnName="RefundID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PayServiceTaxes">
+      <EntityTypeMapping TypeName="REMSDBModel.PayServiceTax">
+        <MappingFragment StoreEntitySet="PayServiceTax">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankClearanceDate" ColumnName="BankClearanceDate" />
+          <ScalarProperty Name="BankCharges" ColumnName="BankCharges" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="AmtRcvdinWords" ColumnName="AmtRcvdinWords" />
+          <ScalarProperty Name="PaymentNo" ColumnName="PaymentNo" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PayDate" ColumnName="PayDate" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="PayServiceTaxID" ColumnName="PayServiceTaxID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyRemarks">
+      <EntityTypeMapping TypeName="REMSDBModel.PropertyRemark">
+        <MappingFragment StoreEntitySet="PropertyRemark">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="FollowupAmount" ColumnName="FollowupAmount" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="ProprtyName" ColumnName="ProprtyName" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="RemakDate" ColumnName="RemakDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="Rid" ColumnName="Rid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyTransfers">
+      <EntityTypeMapping TypeName="REMSDBModel.PropertyTransfer">
+        <MappingFragment StoreEntitySet="PropertyTransfer">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="NewPlanType" ColumnName="NewPlanType" />
+          <ScalarProperty Name="OldPlanType" ColumnName="OldPlanType" />
+          <ScalarProperty Name="TransferAmount" ColumnName="TransferAmount" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="NewCustomerID" ColumnName="NewCustomerID" />
+          <ScalarProperty Name="OldCustomerID" ColumnName="OldCustomerID" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="PropertyTransferID" ColumnName="PropertyTransferID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RefundProperties">
+      <EntityTypeMapping TypeName="REMSDBModel.RefundProperty">
+        <MappingFragment StoreEntitySet="RefundProperty">
+          <ScalarProperty Name="FlatName" ColumnName="FlatName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="RefundAmount" ColumnName="RefundAmount" />
+          <ScalarProperty Name="RefundDate" ColumnName="RefundDate" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="RefundPropertyID" ColumnName="RefundPropertyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReminderLetters">
+      <EntityTypeMapping TypeName="REMSDBModel.ReminderLetter">
+        <MappingFragment StoreEntitySet="ReminderLetter">
+          <ScalarProperty Name="DueAmount" ColumnName="DueAmount" />
+          <ScalarProperty Name="duedate" ColumnName="duedate" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LetterType" ColumnName="LetterType" />
+          <ScalarProperty Name="ReminderLetterID" ColumnName="ReminderLetterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleAccesses">
+      <EntityTypeMapping TypeName="REMSDBModel.RoleAccess">
+        <MappingFragment StoreEntitySet="RoleAccess">
+          <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+          <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+          <ScalarProperty Name="AssignUser" ColumnName="AssignUser" />
+          <ScalarProperty Name="AssignDate" ColumnName="AssignDate" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="ModuleListID" ColumnName="ModuleListID" />
+          <ScalarProperty Name="RoleAccessID" ColumnName="RoleAccessID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaxMasters">
+      <EntityTypeMapping TypeName="REMSDBModel.TaxMaster">
+        <MappingFragment StoreEntitySet="TaxMaster">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CrDate" ColumnName="CrDate" />
+          <ScalarProperty Name="ApplyTill" ColumnName="ApplyTill" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="TaxTag" ColumnName="TaxTag" />
+          <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+          <ScalarProperty Name="TaxMasterID" ColumnName="TaxMasterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UploadAgreements">
+      <EntityTypeMapping TypeName="REMSDBModel.UploadAgreement">
+        <MappingFragment StoreEntitySet="UploadAgreement">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="UploadAgreementID" ColumnName="UploadAgreementID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAccesses">
+      <EntityTypeMapping TypeName="REMSDBModel.UserAccess">
+        <MappingFragment StoreEntitySet="UserAccess">
+          <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+          <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+          <ScalarProperty Name="AssignUser" ColumnName="AssignUser" />
+          <ScalarProperty Name="AssignDate" ColumnName="AssignDate" />
+          <ScalarProperty Name="IsWrite" ColumnName="IsWrite" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ModuleListID" ColumnName="ModuleListID" />
+          <ScalarProperty Name="UserAccessID" ColumnName="UserAccessID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProperties">
+      <EntityTypeMapping TypeName="REMSDBModel.UserProperty">
+        <MappingFragment StoreEntitySet="UserProperty">
+          <ScalarProperty Name="AssignUser" ColumnName="AssignUser" />
+          <ScalarProperty Name="AssignDate" ColumnName="AssignDate" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="UserPropertyID" ColumnName="UserPropertyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PayTransferFees">
+      <EntityTypeMapping TypeName="REMSDBModel.PayTransferFee">
+        <MappingFragment StoreEntitySet="PayTransferFee">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankClearanceDate" ColumnName="BankClearanceDate" />
+          <ScalarProperty Name="BankCharges" ColumnName="BankCharges" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="AmtRcvdinWords" ColumnName="AmtRcvdinWords" />
+          <ScalarProperty Name="PaymentNo" ColumnName="PaymentNo" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PayDate" ColumnName="PayDate" />
+          <ScalarProperty Name="FlatID" ColumnName="FlatID" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+          <ScalarProperty Name="PayTransferID" ColumnName="PayTransferID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SaleFlat">
+      <EntityTypeMapping TypeName="REMSDBModel.vw_SaleFlat">
+        <MappingFragment StoreEntitySet="vw_SaleFlat">
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="TowerNo" ColumnName="TowerNo" />
+          <ScalarProperty Name="TowerName" ColumnName="TowerName" />
+          <ScalarProperty Name="ProjectTypeID" ColumnName="ProjectTypeID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="FloorName" ColumnName="FloorName" />
+          <ScalarProperty Name="FloorNo" ColumnName="FloorNo" />
+          <ScalarProperty Name="TowerID" ColumnName="TowerID" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="FlatSizeUnit" ColumnName="FlatSizeUnit" />
+          <ScalarProperty Name="FlatSize" ColumnName="FlatSize" />
+          <ScalarProperty Name="FlatNo" ColumnName="FlatNo" />
+          <ScalarProperty Name="FlatName" ColumnName="FlatName" />
+          <ScalarProperty Name="FlatType" ColumnName="FlatType" />
+          <ScalarProperty Name="FloorID" ColumnName="FloorID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TotalAmtInWords" ColumnName="TotalAmtInWords" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="ServiceTaxAmount" ColumnName="ServiceTaxAmount" />
+          <ScalarProperty Name="ServiceTaxPer" ColumnName="ServiceTaxPer" />
+          <ScalarProperty Name="SaleRateInWords" ColumnName="SaleRateInWords" />
+          <ScalarProperty Name="SaleRate" ColumnName="SaleRate" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="Aggrement" ColumnName="Aggrement" />
+          <ScalarProperty Name="FlatID" ColumnName="FlatID" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleFlats">
+      <EntityTypeMapping TypeName="REMSDBModel.SaleFlat">
+        <MappingFragment StoreEntitySet="SaleFlat">
+          <ScalarProperty Name="DemandStatus" ColumnName="DemandStatus" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TotalAmtInWords" ColumnName="TotalAmtInWords" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="ServiceTaxAmount" ColumnName="ServiceTaxAmount" />
+          <ScalarProperty Name="ServiceTaxPer" ColumnName="ServiceTaxPer" />
+          <ScalarProperty Name="SaleRateInWords" ColumnName="SaleRateInWords" />
+          <ScalarProperty Name="SaleRate" ColumnName="SaleRate" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="Aggrement" ColumnName="Aggrement" />
+          <ScalarProperty Name="FlatID" ColumnName="FlatID" />
+          <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

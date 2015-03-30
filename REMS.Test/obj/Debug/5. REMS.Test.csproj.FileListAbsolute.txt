@@ -1,0 +1,15 @@
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Test\bin\Debug\REMS.Test.dll
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Test\bin\Debug\REMS.Test.pdb
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Test\obj\Debug\REMS.Test.dll
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Test\obj\Debug\REMS.Test.pdb
+D:\ComaxCosulting\1. SourceCode\REMS\REMS.Test\obj\Debug\5. REMS.Test.csprojResolveAssemblyReference.cache
+D:\Projects\Rem\REMS.Test\bin\Debug\REMS.Test.dll
+D:\Projects\Rem\REMS.Test\bin\Debug\REMS.Test.pdb
+D:\Projects\Rem\REMS.Test\obj\Debug\5. REMS.Test.csprojResolveAssemblyReference.cache
+D:\Projects\Rem\REMS.Test\obj\Debug\REMS.Test.dll
+D:\Projects\Rem\REMS.Test\obj\Debug\REMS.Test.pdb
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Test\bin\Debug\REMS.Test.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Test\bin\Debug\REMS.Test.pdb
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Test\obj\Debug\5. REMS.Test.csprojResolveAssemblyReference.cache
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Test\obj\Debug\REMS.Test.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Test\obj\Debug\REMS.Test.pdb

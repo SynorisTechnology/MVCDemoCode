@@ -1,0 +1,19 @@
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\bin\Debug\REMS.Data.dll.config
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\bin\Debug\REMS.Data.dll
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\bin\Debug\REMS.Data.pdb
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\bin\Debug\EntityFramework.dll
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\bin\Debug\EntityFramework.xml
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\obj\Debug\REMS.Data.dll
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\obj\Debug\REMS.Data.pdb
+E:\ComaxCosulting\1. SourceCode\rem\REMS.Data\obj\Debug\3. REMS.Data.csprojResolveAssemblyReference.cache
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data\bin\Debug\REMS.Data.dll.config
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data\bin\Debug\REMS.Data.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data\bin\Debug\REMS.Data.pdb
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data\bin\Debug\EntityFramework.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data\bin\Debug\EntityFramework.xml
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data\obj\Debug\REMS.Data.dll
+E:\ComaxCosulting\1. SourceCode\REMS-Git\REMS.Data\obj\Debug\REMS.Data.pdb
